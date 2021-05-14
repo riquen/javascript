@@ -1,0 +1,28 @@
+let comp = 10 > 5;
+console.log(comp);
+comp = 10 >= 5;
+console.log(comp);
+comp = 4 >= 5;
+console.log(comp);
+comp = 10 < 5;
+console.log(comp);
+comp = 10 <= 5;
+console.log(comp);
+comp = 4 <= 5;
+console.log(comp);
+
+const num1 = 10;
+const num2 = 5;
+const num3 = 4;
+comp = num1 > num2;
+console.log(comp);
+comp = num1 >= num2;
+console.log(comp);
+comp = num3 >= num2;
+console.log(comp);
+comp = num1 < num2;
+console.log(comp);
+comp = num1 <= num2;
+console.log(comp);
+comp = num3 <= num2;
+console.log(comp);
