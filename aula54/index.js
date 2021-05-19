@@ -1,0 +1,32 @@
+const nomes1 = ['Henrique', 'Anny', 'Natalia'];
+const sobrenomes = new Array('Arantes', 'Moraes', 'Mohamad');
+console.log(`${nomes1[0]} ${sobrenomes[0]}; ${nomes1[1]} ${sobrenomes[1]}; ${nomes1[2]} ${sobrenomes[2]}`);
+let nome = 'Henrique Arantes Nunes';
+let nomes2 = nome.split(' ');
+console.log(nomes2);
+nome = nomes1.join(' ');
+console.log(nome);
+
+const frutas = ['Banana', 'Abacate', 'Melancia', 'Laranja', 'Maçã'];
+let removidos = frutas.splice(3, 2);
+console.log(removidos);
+removidos = frutas.splice(-2, 1);
+console.log(removidos);
+frutas.splice(1, 0, 'Limão', 'Uva', 'Ameixa', 'Salsinha');
+console.log(frutas);
+removidos = frutas.splice(4, 1, 'Abacaxi');
+console.log(frutas, removidos);
+frutas.splice(frutas.length, 0, 'Kiwi', 'Pera');
+console.log(frutas);
+frutas.splice(0, 0, 'Jaca', 'Jaboticaba');
+console.log(frutas);
+removidos = frutas.splice(-1, 1);
+console.log(frutas);
+removidos = frutas.splice(0, 1);
+console.log(frutas);
+
+const nums1 = [1, 2, 3];
+const nums2 = [4, 5, 6];
+const numeros = nums1.concat(nums2, [7, 8, 9]);
+const valores = [...nums1, ...nums2, ...[7, 8, 9]];
+console.log(numeros, valores);
