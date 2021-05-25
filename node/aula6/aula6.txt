@@ -1,0 +1,4 @@
+terminal -> npm init -y
+terminal -> npm install express
+terminal -> pwd
+terminal externo -> node server.js

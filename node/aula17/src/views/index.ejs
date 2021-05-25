@@ -1,0 +1,21 @@
+<%- include('includes/head'); %>
+
+<section class="container">
+    <h1>
+        <%= titulo %>
+    </h1>
+    <h4><%= umaVariavelLocal %></h4>
+    <p>
+        <% numeros.forEach(num => { %>
+            <%= num %>
+        <% }); %>
+    </p>
+    <form action="/" method="POST">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <label for="">Nome do cliente</label>
+        <input type="text" name="cliente">
+        <button>Submit</button>
+    </form>
+</section>
+
+<%- include('includes/footer'); %>

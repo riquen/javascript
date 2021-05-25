@@ -1,0 +1,4 @@
+terminal -> npm init -y
+terminal -> npm i --save-dev @babel/core @babel/cli @babel/preset-env babel-loader webpack webpack-cli core-js@3.12.1 regenerator-runtime
+terminal -> npm run dev
+terminal -> npm install style-loader css-loader

@@ -1,0 +1,10 @@
+terminal -> npm init -y
+terminal -> npm install express
+terminal -> npm update
+terminal -> npm install --save-dev
+terminal -> npm install --save-prod
+terminal -> npm install express@2.1.0 -E
+terminal -> npm uninstall express
+terminal -> npm ls
+terminal -> npm ls --depth=0
+terminal -> npm outdated

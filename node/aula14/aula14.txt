@@ -1,0 +1,3 @@
+terminal -> npm install dotenv
+terminal -> npm install mongoose
+mongodb+srv://riquen:<password>@cluster0.mgrzw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

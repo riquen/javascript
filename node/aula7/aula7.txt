@@ -1,0 +1,4 @@
+terminal -> npm install
+terminal -> npm install nodemon --save-dev
+terminal -> npx nodemon server.js
+terminal externo -> npm start
