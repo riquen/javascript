@@ -16,7 +16,10 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
+  'http://34.95.175.220',
   'http://localhost:3000',
+  'http://localhost:3001',
+  '*',
 ];
 
 const corsOptions = {
@@ -24,7 +27,7 @@ const corsOptions = {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'));
+      callback(new Error(`Not allowed by CORS: ${origin}`));
     }
   },
 };
