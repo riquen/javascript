@@ -45,6 +45,11 @@ class App {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use('/images/', express.static(resolve(__dirname, '..', 'uploads', 'images')));
+    this.app.use((req, res, next) => {
+      res.header('Access-Control-Allow-Origin', '*'); // update to match the domain you will make the request from
+      res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+      next();
+    });
   }
 
   routes() {
