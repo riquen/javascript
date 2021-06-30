@@ -19,7 +19,6 @@ const whiteList = [
   'http://34.95.175.220',
   'http://localhost:3000',
   'http://localhost:3001',
-  '*',
 ];
 
 const corsOptions = {
@@ -27,7 +26,7 @@ const corsOptions = {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
-      callback(new Error(`Not allowed by CORS: ${origin}`));
+      callback(new Error('Not allowed by CORS'));
     }
   },
 };
@@ -45,11 +44,6 @@ class App {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use('/images/', express.static(resolve(__dirname, '..', 'uploads', 'images')));
-    this.app.use((req, res, next) => {
-      res.header('Access-Control-Allow-Origin', '*'); // update to match the domain you will make the request from
-      res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-      next();
-    });
   }
 
   routes() {
