@@ -17,7 +17,6 @@ var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopReq
 
 const whiteList = [
   'http://34.95.175.220',
-  'http://localhost:3000',
   'http://localhost:3001',
 ];
 

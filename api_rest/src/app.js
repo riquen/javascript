@@ -17,7 +17,6 @@ import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
   'http://34.95.175.220',
-  'http://localhost:3000',
   'http://localhost:3001',
 ];
 
