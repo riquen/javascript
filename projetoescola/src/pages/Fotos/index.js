@@ -33,7 +33,7 @@ export default function Fotos({ match }) {
     };
 
     getData();
-  }, []);
+  }, [id]);
 
   const handleChange = async (e) => {
     const file = e.target.files[0];
